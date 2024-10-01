@@ -4,7 +4,7 @@
 
 //thread function defined
 void *ThreadFunction(void *arg){
-    printf("Hello World from thread ID %lu!\n", pthread_self());
+    printf("I like the game Dress to Impress on Roblox %lu!\n", pthread_self());
     //function is void so we return null
     return NULL;
 }
@@ -19,7 +19,7 @@ int main(){
         return 1;
     }
     //main thread to say hello
-    printf("Hello world from the main thread (thread ID %lu)!\n", pthread_self());
+    printf("My name is Melissa!! (thread ID %lu)!\n", pthread_self());
 
     //waiting for child process to finish
     pthread_join(thread, NULL);
